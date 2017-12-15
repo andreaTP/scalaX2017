@@ -21,7 +21,7 @@ object Main extends js.JSApp {
     val fs = g.require("fs")
     /*credentials format:
      *{
-     * "consumer_key": "",
+     *  "consumer_key": "",
      *  "consumer_secret": "",
      *  "token": "",
      *  "token_secret": ""

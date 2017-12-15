@@ -90,12 +90,6 @@
         <section>
           <section data-markdown>
             <script type="text/template">
-            ##Backend
-            project configuration
-            </script>
-          </section>
-          <section data-markdown>
-            <script type="text/template">
             ##Backend Architecture
               - WebSocketServer -> Actor<!-- .element: style="color: white;" class="fragment" data-fragment-index="1" -->
               - WebSocketChannel -> Actor<!-- .element: style="color: white;" class="fragment" data-fragment-index="2" -->
@@ -126,25 +120,9 @@
         <section>
           <section data-markdown>
             <script type="text/template">
-            ##Frontend
-            project configuration
-            </script>
-          </section>
-          <section data-markdown>
-            <script type="text/template">
             ##Frontend Architecture
-              - UI -> Dom -> Actors<!-- .element: style="color: white;" class="fragment" data-fragment-index="1" -->
-              - WebSocketChannel -> Actor -> Stream<!-- .element: style="color: white;" class="fragment" data-fragment-index="2" -->
-            </script>
-          </section>
-          <section data-markdown>
-            <script type="text/template">
-            ##Frontend Architecture
-            ###UI<!-- .element: style="color: white;"-->
-              - UIActor<!-- .element: style="color: white;" class="fragment" data-fragment-index="1" -->
-                - NavBarActor<!-- .element: style="color: white;" class="fragment" data-fragment-index="2" -->
-                - TrackerActor<!-- .element: style="color: white;" class="fragment" data-fragment-index="3" -->
-                - CarouselActor<!-- .element: style="color: white;" class="fragment" data-fragment-index="4" -->
+              - WebSocketChannel -> Actor -> Stream<!-- .element: style="color: white;" class="fragment" data-fragment-index="1" -->
+              - UI -> Dom -> Actors<!-- .element: style="color: white;" class="fragment" data-fragment-index="2" -->
             </script>
           </section>
           <section data-markdown>
@@ -156,6 +134,16 @@
             ~> Stream (Testkit!)<!-- .element: style="color: white;" class="fragment" data-fragment-index="2" -->
 
             ~> UIActor<!-- .element: style="color: white;" class="fragment" data-fragment-index="3" -->
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+            ##Frontend Architecture
+            ###UI<!-- .element: style="color: white;"-->
+              - UIActor<!-- .element: style="color: white;" class="fragment" data-fragment-index="1" -->
+                - NavBarActor<!-- .element: style="color: white;" class="fragment" data-fragment-index="2" -->
+                - TrackerActor<!-- .element: style="color: white;" class="fragment" data-fragment-index="3" -->
+                - CarouselActor<!-- .element: style="color: white;" class="fragment" data-fragment-index="4" -->
             </script>
           </section>
         </section>
@@ -181,10 +169,10 @@
             <script type="text/template">
               ##It's Akka!
               ####LOC statistics<!-- .element: style="color: white;" -->
-              - Akka shared ~ 24695<!-- .element: class="fragment" data-fragment-index="2" -->
-              - Akka JS ~ 4371<!-- .element: class="fragment" data-fragment-index="3" -->
-              - Akka Stream shared ~ 31532<!-- .element: class="fragment" data-fragment-index="4" -->
-              - Akka Stream JS ~ 1238<!-- .element: class="fragment" data-fragment-index="5" -->
+              - Akka shared ~ 25193<!-- .element: class="fragment" data-fragment-index="2" -->
+              - Akka JS ~ 4380<!-- .element: class="fragment" data-fragment-index="3" -->
+              - Akka Stream shared ~ 34697<!-- .element: class="fragment" data-fragment-index="4" -->
+              - Akka Stream JS ~ 1260<!-- .element: class="fragment" data-fragment-index="5" -->
             </script>
           </section>
         </section>
@@ -199,9 +187,9 @@
             <script type="text/template">
               ###Performance
 
-              |PingPong|1.2.5.0|1.2.5.1|1.2.5.2|1.2.5.4/6|JVM|
+              |PingPong|1.2.5.0|1.2.5.1|1.2.5.2|1.2.5.4/6/8|JVM|
               |:-------:|:-----:|:-----:|:-----:|:-:|
-              ||2476333|2317666|3923|___2507___|1192|
+              ||2476333|2317666|3923|___2394___|1280|
             </script>
           </section>
         </section>
